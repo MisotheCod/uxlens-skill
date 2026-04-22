@@ -1,6 +1,7 @@
 ---
 name: ux-audit
-description: Audit any website for UX, UI, and accessibility issues before launching or during code review. Use when: checking a landing page's usability before launch, validating accessibility (WCAG) compliance, getting Core Web Vitals feedback, comparing scores before/after a redesign, or fixing UX issues found by other agents. invoked: automatically when user asks about launching, auditing, or checking a website's quality.
+description: Audit any website for UX, UI, and accessibility issues before launching or during code review. Use when: checking a landing page's usability before launch, validating accessibility (WCAG) compliance, getting Core Web Vitals feedback, comparing scores before/after a redesign, or fixing UX issues found by other agents.
+invoked: automatically when user asks about launching, auditing, or checking a website's quality.
 ---
 
 # UXLens — Website UX Audit Skill
