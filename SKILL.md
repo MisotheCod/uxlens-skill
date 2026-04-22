@@ -53,9 +53,9 @@ POST /api/audit
 }
 ```
 
-With API key (via Authorization header or inline):
+With API key (via X-API-Key header):
 ```
-Authorization: Bearer UXLENS_API_KEY
+X-API-Key: $UXLENS_API_KEY
 ```
 
 ### Full Site Crawl
@@ -74,7 +74,7 @@ POST /api/audit
 First audit:
 ```bash
 curl -X POST https://uxlens.io/api/audit \
-  -H "Authorization: Bearer $UXLENS_API_KEY" \
+  -H "X-API-Key: $UXLENS_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"url":"https://mysite.com"}'
 # Save the audit_id from the response
@@ -83,7 +83,7 @@ curl -X POST https://uxlens.io/api/audit \
 Second audit with comparison:
 ```bash
 curl -X POST https://uxlens.io/api/audit \
-  -H "Authorization: Bearer $UXLENS_API_KEY" \
+  -H "X-API-Key: $UXLENS_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"url":"https://mysite.com","compare_to":"uxl_xxxx"}'
 ```
